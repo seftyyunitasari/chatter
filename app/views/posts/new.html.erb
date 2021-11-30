@@ -1,8 +1,2 @@
 <h1>Create a new post</h1>
-<%= form_with(model: @post, local:true) do |form| %>
-    <%= form.label :content %>
-	<div class="post_content">
-		<%= form.text_area :content %>
-	</div>
-	<%= form.submit "Post" %>
-<% end %>
+<%= render 'form' %>
