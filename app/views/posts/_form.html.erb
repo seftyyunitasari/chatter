@@ -1,6 +1,6 @@
 <%= notice %>
 
-<%= form_with(model: @post, local:true) do |form| %>
+<%= form_with(model: @post, local:true, url: new_or_edit) do |form| %>
   
   <% if @post.errors.any? %>
     <div>
