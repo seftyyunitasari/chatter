@@ -1,8 +1,8 @@
 require "test_helper"
 
-class ChatsControllerTest < ActionDispatch::IntegrationTest
+class PostsControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
-    get chats_index_url
+    get posts_index_url
     assert_response :success
   end
 end

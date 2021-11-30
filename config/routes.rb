@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  get '/chats', to: 'chats#index'
+  get 'posts/index'
+  resources :posts
  end
