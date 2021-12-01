@@ -1,16 +1,50 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Chatter</title>
+    <title>Twitter Clone</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <div class="sidebar">
+      <div class="logo">
+        <img src="/assets/twitter-logo.png">
+      </div>
+
+      <div class="nav">
+        <span class="material-icons">home</span>
+        <a href="/posts">Home</a>
+      </div>
+
+      <div class="nav">
+        <span class="material-icons">notifications</span>
+        <a href="/posts">Notification</a>
+      </div>
+
+      <div class="nav">
+        <span class="material-icons">email
+        </span>
+        <a href="/posts">Messages</a>
+      </div>
+
+      <div class="nav">
+        <span class="material-icons">person</span>
+        <a href="/posts">Profile</a>
+      </div>
+    </div>
+
+    <div class="mainbar">
+      <%= yield %>
+    </div>
+
+    <div class="rightbar">
+      <h3>What's trending</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus odio neque, malesuada eget luctus a, pharetra a dolor. Curabitur viverra molestie elit ac pulvinar. Aenean nisl ex, bibendum id dolor quis, laoreet ullamcorper nulla.</p>
+    </div>
   </body>
 </html>
