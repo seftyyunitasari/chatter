@@ -1,0 +1,47 @@
+table{
+	width: 100%;
+}
+
+table tr td{
+	border: 1px solid #ddd;
+}
+
+table a{
+	text-decoration: none;
+	color: #000000;
+}
+
+table a: hover{
+	color: #cccccc;
+	font-weight: bold;
+}
+
+#link_to{
+	font-size: 20px;
+	text-decoration: none;
+	color: #000000;
+}
+
+#link_to:hover{
+	font-weight: bold;
+}
+
+#img_col{
+	width: 15%;
+}
+
+#time{
+	font-size: 12px;
+	text-align: right;
+}
+
+#post_navs td{
+	font-size: 16px;
+	text-align: center;
+	table-layout: fixed;
+}
+
+#post_navs td:hover{
+	font-weight: bold;
+}
+
